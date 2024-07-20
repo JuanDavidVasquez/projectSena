@@ -1,0 +1,21 @@
+:wq!   para escribir y salir 
+
+
+git status
+git add .  Agrega al stage (toma la camputa inicial)
+git commit -m "mensaje"
+
+git checkout -- .   Reconstruir el proyecto a como estaba en la version anterior
+
+
+git branch    Muestra donde se esta tabajando (rama)
+
+
+
+
+
+Algunos en la próxima clase han presentado este problema con el CRLF, no es nada serio, es básicamente una interpretación de un carácter.
+
+Simplemente ejecuten este comando si presentan el error:
+
+git config core.autocrlf true
