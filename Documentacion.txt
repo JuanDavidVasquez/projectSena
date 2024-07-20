@@ -1,0 +1,21 @@
+1. npm init
+2. npm i express
+3. crear index.js
+4. npm i -D nodemon
+5. en el archivo package.json colocar en scripts:
+
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+
+6. colocar type module en package.json: 
+
+
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Aprendiendo Mern stack",
+  "type": "module",
+  "main": "index.js",
+
+7.
