@@ -16,6 +16,9 @@ git reset --soft HEAD^ (HEAD^2 apunta al ultimo comit y el ^ al anterior al ulti
 
 git mv nombreArchivo newNombreArchivo mueve el archivo y cambia el nombre
 
+git rm nombreArchivo elimina archivo pero no del stage
+
+
 
 #-------------- Regresar en el tiempo (version)---------------#
 
@@ -61,3 +64,13 @@ presentado este problema con el CRLF, no es nada serio, es básicamente una inte
 Simplemente ejecuten este comando si presentan el error:
 
 git config core.autocrlf true
+
+
+
+
+#------------------------------------- GitHub -----------------------------------#
+
+
+git remote add origin https://github.com/JuanDavidVasquez/projectSena.git
+git branch -M main
+git push -u origin main
