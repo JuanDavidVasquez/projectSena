@@ -1,3 +1,4 @@
 # Notas
-Este es un repositorio del app appTask
+This is a repository of the app appTask
 
+npm i (client and api)

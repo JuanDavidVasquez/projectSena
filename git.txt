@@ -2,19 +2,61 @@
 
 
 git status
+git status --short
 git add .  Agrega al stage (toma la camputa inicial)
 git commit -m "mensaje"
-
+git commit -am "README actualizado"  sube datos que ya an sido add
 git checkout -- .   Reconstruir el proyecto a como estaba en la version anterior
-
-
 git branch    Muestra donde se esta tabajando (rama)
 
+git diff muestra la diferencia entre versiones
+
+git reset --soft HEAD^ (HEAD^2 apunta al ultimo comit y el ^ al anterior al ultimo o con numero para colocar la cantidad)
+--soft mantiene los cambios a diferencia del solo reset
+
+git mv nombreArchivo newNombreArchivo mueve el archivo y cambia el nombre
+
+
+#-------------- Regresar en el tiempo (version)---------------#
+
+git reset --mixed id(id o codigo de la version) Saca del stage las versiones superiores a la marcada
+
+git reset --hard id/codigo 
+
+#Recuperar por referencia
+git reflog para ver todos las versiones asi sean borradas, se muestra todo el historial
+git reset --hard id/codigo para moverse a como estaba el repositorio en ese momento
+
+
+#-------------Atajos------------#
+git add directorio*.extencion
+git add assets/html*.html  => reune todos los archivos html que estan en assets/html
+
+
+#----------- Alias ----------------#
+
+git config --global alias.s "status --short"
+new comando git s
+
+git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+new comando git lg
+
+
+#-------Mantener carpeta asi este vacia-----------#
+añadir en la carpeta  vacia .gitkeep para mantenerla ya que git no mantiene carpetas vacias
 
 
 
 
-Algunos en la próxima clase han presentado este problema con el CRLF, no es nada serio, es básicamente una interpretación de un carácter.
+
+#-----------------------------------------#
+
+git reset nombreArchivo.extencion => girt reset index.html esto quita a el index de stage(ya no tiene seguimiento)
+
+Para remover Git de un proyecto, puedes ejecutar el siguiente comando en la raíz de tu proyecto:
+rm -rf .git
+
+presentado este problema con el CRLF, no es nada serio, es básicamente una interpretación de un carácter.
 
 Simplemente ejecuten este comando si presentan el error:
 
